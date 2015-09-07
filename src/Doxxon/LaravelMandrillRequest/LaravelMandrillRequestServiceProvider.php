@@ -18,7 +18,9 @@ class LaravelMandrillRequestServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('doxxon/laravel-mandrill-request');
+        $this->publishes([
+            __DIR__.'/../../config/laravel-mandril-request-config.php' => config_path('laravel-mandril-request-config.php'),
+        ]);
     }
 
     /**
