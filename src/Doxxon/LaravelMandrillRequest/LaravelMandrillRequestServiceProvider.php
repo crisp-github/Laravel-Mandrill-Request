@@ -19,7 +19,7 @@ class LaravelMandrillRequestServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/laravel-mandril-request-config.php' => config_path('laravel-mandril-request-config.php'),
+            __DIR__.'/../../config/laravel-mandril-request.php' => config_path('laravel-mandrill-request.php'),
         ]);
     }
 

@@ -14,7 +14,7 @@ class MandrillRequest
     {
         // load api key
         if (!$api_key) {
-            $api_key = \Config::get('laravel-mandrill-request::api_key');
+            $api_key = \Config::get('laravel-mandrill-request.api_key');
         }
 
         // determine endpoint
